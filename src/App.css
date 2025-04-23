@@ -1,16 +1,17 @@
-/* General styles */
+/* General styles for the body */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #f4f4f9; /* Light background color */
+  color: #333; /* Text color */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100vh; /* Full viewport height */
 }
 
+/* Styles for the main app container */
 .app {
   text-align: center;
   padding: 2rem;
@@ -21,21 +22,22 @@ body {
   width: 100%;
 }
 
+/* Heading styles */
 h1 {
   font-size: 2.5rem;
-  color: #2a9d8f;
+  color: #2a9d8f; /* Green color */
   margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 1.5rem;
-  color: #555;
+  color: #555; /* Gray color */
   margin-bottom: 1rem;
 }
 
-/* Refresh button */
+/* Styles for the refresh button */
 .refresh-btn {
-  background-color: #2a9d8f;
+  background-color: #2a9d8f; /* Green background */
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -45,10 +47,10 @@ h2 {
 }
 
 .refresh-btn:hover {
-  background-color: #21867a;
+  background-color: #21867a; /* Darker green on hover */
 }
 
-/* Gallery styles */
+/* Styles for the gallery container */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +59,7 @@ h2 {
   margin-top: 2rem;
 }
 
-/* Tour card styles */
+/* Styles for individual tour cards */
 .tour-card {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -69,30 +71,35 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Styles for the tour image */
 .tour-image {
   width: 100%;
   border-radius: 8px;
 }
 
+/* Styles for the tour details section */
 .tour-details {
   margin-top: 1rem;
 }
 
+/* Styles for the tour price */
 .tour-price {
   font-weight: bold;
-  color: #2a9d8f;
+  color: #2a9d8f; /* Green color */
   font-size: 1.2rem;
 }
 
+/* Styles for the tour information */
 .tour-info {
   margin: 0.5rem 0;
-  color: #555;
+  color: #555; /* Gray color */
   font-size: 0.9rem;
   line-height: 1.4;
 }
 
+/* Styles for the "Not Interested" button */
 .not-interested-btn {
-  background-color: #e63946;
+  background-color: #e63946; /* Red background */
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -102,5 +109,5 @@ h2 {
 }
 
 .not-interested-btn:hover {
-  background-color: #d62828;
+  background-color: #d62828; /* Darker red on hover */
 }
