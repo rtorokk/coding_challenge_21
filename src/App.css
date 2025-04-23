@@ -1,10 +1,72 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2a9d8f;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Refresh button */
+.refresh-btn {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.refresh-btn:hover {
+  background-color: #21867a;
+}
+
+/* Gallery styles */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Tour card styles */
 .tour-card {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem;
   text-align: left;
-  max-width: 400px;
+  max-width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tour-image {
@@ -19,11 +81,14 @@
 .tour-price {
   font-weight: bold;
   color: #2a9d8f;
+  font-size: 1.2rem;
 }
 
 .tour-info {
   margin: 0.5rem 0;
   color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .not-interested-btn {
@@ -33,6 +98,7 @@
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .not-interested-btn:hover {

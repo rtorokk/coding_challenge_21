@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import Gallery from './components/Gallery.jsx';
+import Gallery from './components/Gallery'; // Ensure this path is correct
+
+const API_URL = 'https://course-api.com/react-tours-project';
 
 function App() {
   const [tours, setTours] = useState([]);
@@ -9,14 +11,17 @@ function App() {
 
   const fetchTours = async () => {
     setLoading(true);
+    setError(null);
     try {
-      const response = await fetch('https://course-api.com/react-tours-project');
+    
+const response = await fetch(
+        'https://api.allorigins.win/raw?url=https://course-api.com/react-tours-project'
+      );
       if (!response.ok) {
         throw new Error('Failed to fetch tours');
       }
       const data = await response.json();
       setTours(data);
-      setError(null);
     } catch (err) {
       setError(err.message);
     } finally {
