@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import TourCard from './components/TourCard';
+import TourCard from './components/TourCard.jsx';
+import Gallery from './components/Gallery.jsx';
 
 function App() {
   const [tours, setTours] = useState([]);
@@ -45,11 +46,7 @@ function App() {
   return (
     <div className="app">
       <h1>Tours</h1>
-      <div className="tours-container">
-        {tours.map((tour) => (
-          <TourCard key={tour.id} tour={tour} onRemove={removeTour} />
-        ))}
-      </div>
+      <Gallery tours={tours} onRemove={removeTour} />
     </div>
   );
 }
